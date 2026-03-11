@@ -1,7 +1,48 @@
 /* Base styles */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  color: white;
+}
+
+.logo-img {
+  background-image: url(../imgs/MexFood2.jpg);
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -18,10 +59,11 @@ body {
 
 .navbar li a {
   display: block;
-  color: #000;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 30px;
 }
 
 .navbar li a:hover {
@@ -29,6 +71,6 @@ body {
 }
 
 .logo {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
