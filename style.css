@@ -19,7 +19,7 @@ body {
 .BL-img {
   position: relative;
   background-image: url(../imgs/MexFood2.jpg);
-  min-height: 400px;
+  min-height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,37 +34,31 @@ body {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
 }
 
 .logo {
-  height: 200px;
+  height: 180px;
   z-index: 2;
 }
 
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  padding: 20px;
   z-index: 2;
 }
 
 .navbar ul {
-  list-style-type: none;
-  padding: 20px;
+  list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
 
 .navbar li a {
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 24px;
-  margin: 0 20px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .navbar li a:hover {
