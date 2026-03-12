@@ -43,6 +43,13 @@ body {
   z-index: 2;
 }
 
+.hamburger {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 3;
+}
+
 .navbar {
   padding: 20px;
   z-index: 2;
