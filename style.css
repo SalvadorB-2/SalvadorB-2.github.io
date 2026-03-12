@@ -38,6 +38,7 @@ body {
 }
 
 .logo {
+  padding: 10px;
   height: 180px;
   z-index: 2;
 }
