@@ -33,7 +33,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -72,4 +72,25 @@ body {
 .navbar li a:hover {
   text-decoration: underline;
   color: #f4b400;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(244, 243, 243, 0);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
