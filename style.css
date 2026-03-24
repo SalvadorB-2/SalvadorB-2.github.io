@@ -126,6 +126,7 @@ body {
 @media (max-width: 768px) {
   .logo {
     height: 100px;
+    transition: all 0.3s ease;
   }
 
   .hamburger {
@@ -154,6 +155,11 @@ body {
 
   .navbar li a {
     font-size: 20px;
+  }
+
+  .navbar li a:hover {
+    color: white;
+    text-decoration: underline;
   }
 
   .order-btn {
