@@ -134,18 +134,17 @@ body {
   }
 
   .navbar {
-    display: none;
     position: absolute;
     top: 80px;
-    right: 20px;
+    right: -200px; /* hidden off screen */
     background: #f4b400;
     padding: 20px;
     border-radius: 10px;
-    z-index: 2;
+    transition: right 0.3s ease;
   }
 
   .navbar.active {
-    display: block;
+    right: 20px; /* slides in */
   }
 
   .navbar ul {
