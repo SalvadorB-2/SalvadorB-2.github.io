@@ -98,7 +98,36 @@ body {
   color: #f4b400;
 }
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.order-btn {
+  background-color: #f4b400;
+  color: white;
+  padding: 15px 30px;
+  font-size: 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #ffcc33;
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
+  .logo {
+    height: 100px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -126,29 +155,9 @@ body {
   .navbar li a {
     font-size: 20px;
   }
-}
 
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-}
-
-.order-btn {
-  background-color: #f4b400;
-  color: white;
-  padding: 15px 30px;
-  font-size: 30px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.order-btn:hover {
-  background-color: #ffcc33;
-  transform: scale(1.05);
+  .order-btn {
+    font-size: 24px;
+    padding: 12px 25px;
+  }
 }
