@@ -12,14 +12,14 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  height: 100vh;
   color: white;
 }
 
 .BL-img {
   position: relative;
   background-image: url(../imgs/MexFood.jpg);
-  min-height: 700px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
