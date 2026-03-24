@@ -2,11 +2,8 @@ const hamburger = document.getElementById("hamburger");
 const navbar = document.getElementById("navbar");
 
 hamburger.addEventListener("click", () => {
-  if (navbar.style.display === "block") {
-    navbar.style.display = "none";
-  } else {
-    navbar.style.display = "block";
-  }
+  hamburger.classList.toggle("active");
+  navbar.classList.toggle("active");
 });
 
 window.addEventListener("resize", () => {
