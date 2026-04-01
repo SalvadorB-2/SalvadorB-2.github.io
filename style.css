@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Header styles */
 .header-container {
   position: relative;
   width: 100%;
@@ -39,7 +40,7 @@ body {
 
 .logo {
   padding: 10px;
-  height: 180px;
+  height: 130px;
   z-index: 2;
 }
 
@@ -123,6 +124,25 @@ body {
   transform: scale(1.05);
 }
 
+/* Menu styles */
+.menu {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.menu-category {
+  margin-top: 30px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .logo {
     height: 100px;
@@ -132,11 +152,15 @@ body {
   .hamburger {
     display: flex;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
   .navbar {
     position: absolute;
     top: 80px;
-    right: -200px; /* hidden off screen */
+    right: -200px;
     background: #f4b400;
     padding: 20px;
     border-radius: 10px;
@@ -144,7 +168,7 @@ body {
   }
 
   .navbar.active {
-    right: 20px; /* slides in */
+    right: 20px;
   }
 
   .navbar ul {
