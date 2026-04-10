@@ -51,13 +51,14 @@ html {
 
 .navbar a {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar a:hover {
   color: #ffae00;
+  text-decoration: underline;
 }
 
 .hero-content {
@@ -68,7 +69,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 400px;
+  padding-bottom: 300px;
 }
 
 .hero-logo {
@@ -138,7 +139,7 @@ html {
 
 /* Footer styles */
 .footer {
-  background: #111;
+  background: #7b0404;
   color: white;
   text-align: center;
   padding: 20px;
