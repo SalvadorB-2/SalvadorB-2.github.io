@@ -58,7 +58,9 @@ html {
 
 .navbar a:hover {
   color: white;
+  transition: 0.3s ease;
   text-decoration: underline;
+  font-size: 35px;
 }
 
 .hero-content {
@@ -78,9 +80,8 @@ html {
 }
 
 .order-btn {
-  background: #337636;
-  /* color: white; */
-  color: #f4b400;
+  background: #f4b400;
+  color: #3b2a1a;
   padding: 15px 30px;
   font-size: 30px;
   border: none;
@@ -91,8 +92,9 @@ html {
 }
 
 .order-btn:hover {
-  background: #f4b400;
-  color: #337636;
+  transition: 0.3s ease;
+  font-size: 35px;
+  color: white;
 }
 
 /* Gallery styles */
@@ -103,7 +105,7 @@ html {
 }
 
 .gallery h2 {
-  color: #f4b400;
+  color: #3b2a1a;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
