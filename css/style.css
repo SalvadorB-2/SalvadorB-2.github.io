@@ -93,9 +93,36 @@ html {
   background: #ffae00;
 }
 
+/* Gallery styles */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+  background: #7b0404;
+}
+
+.gallery h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* Section - Locations styles */
 
-.locations {
+/* .locations {
   padding: 60px 20px;
   text-align: center;
   background-image: url("imgs/BL_background.png");
@@ -135,7 +162,7 @@ html {
 
 .card p {
   margin: 8px 0;
-}
+} */
 
 /* Footer styles */
 .footer {
