@@ -50,14 +50,14 @@ html {
 }
 
 .navbar a {
-  color: white;
-  font-size: 25px;
+  color: #f4b400;
+  font-size: 30px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #ffae00;
+  color: white;
   text-decoration: underline;
 }
 
@@ -79,9 +79,10 @@ html {
 
 .order-btn {
   background: #337636;
-  color: white;
+  /* color: white; */
+  color: #f4b400;
   padding: 15px 30px;
-  font-size: 25px;
+  font-size: 30px;
   border: none;
   border-radius: 50px;
   font-weight: bold;
@@ -90,18 +91,19 @@ html {
 }
 
 .order-btn:hover {
-  background: #ffae00;
+  background: #f4b400;
+  color: #337636;
 }
 
 /* Gallery styles */
 .gallery {
   padding: 50px 20px;
   text-align: center;
-  background: #7b0404;
+  background: #f5e6d3; /*radial-gradient(circle, #7b0404, #000000);*/
 }
 
 .gallery h2 {
-  color: white;
+  color: #f4b400;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
@@ -109,7 +111,7 @@ html {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
@@ -166,7 +168,8 @@ html {
 
 /* Footer styles */
 .footer {
-  background: #7b0404;
+  background: #3b2a1a;
+  /* background: #7b0404; */
   color: white;
   text-align: center;
   padding: 20px;
