@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Barriga Llena</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class"navbar">
+        <img src="/imgs/BarrigaLlenaLogo.jpg" class="logo" alt="Barriga Llena Logo">
+        
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li>
+                <div class="cart-icon">
+                    🛒 <span id="cart-count">0</span>   
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="menu-header">
+        <h1>Our Menu</h1>
+    </section>
+
+    <!-- Tacos -->
+    <section class="menu-section">
+        <h2>Tacos</h2>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="/imgs/menu_imgs/tacos_asada.jpg" alt="Tacos">
+                <h3>Street Tacos</h3>
+
+                <select title="Choose taco meat" aria-label="Choose taco meat">
+                    <option>Carne Asada</option>
+                    <option>Al Pastor</option>
+                    <option>Chicken</option>
+                </select>
+                
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+
+                <textarea placeholder="Add notes (optional)"></textarea>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BURRITOS -->
+  <section class="menu-section">
+    <h2>Burritos</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="../imgs/menu_imgs/regular_burrito.jpg" alt="Burrito">
+        <h3>Regular Burrito</h3>
+
+        <select title="Choose burrito meat" aria-label="Choose burrito meat">
+          <option>Carne Asada</option>
+          <option>Al Pastor</option>
+          <option>Chicken</option>
+        </select>
+
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <textarea placeholder="Add notes (optional)"></textarea>
+
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DRINKS -->
+  <section class="menu-section">
+    <h2>Drinks</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="../imgs/horchata.jpg" alt="Horchata">
+        <h3>Horchata</h3>
+
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="../imgs/BarrigaLlenaLogo.jpg" alt="Logo" />
+    <p>2026 © Barriga Llena. All rights reserved.</p>
+  </footer>
+</body>
+</html>
