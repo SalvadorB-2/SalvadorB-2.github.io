@@ -212,7 +212,7 @@ html {
   padding: 20px;
   width: 280px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -256,9 +256,19 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: sticky;
   top: 0;
+}
+
+.logo {
+  height: 10vh;
+}
+
+.menu-header-bar a {
+  display: flex;
+  align-items: center;
 }
 
 .menu-section h1 {
@@ -326,6 +336,11 @@ html {
   background: #f5e6d3;
   padding: 5px 10px;
   border-radius: 20px;
+}
+
+.cart-icon:hover {
+  font-size: 30px;
+  transition: 0.3s ease;
 }
 
 #cart-count {
