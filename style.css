@@ -271,6 +271,17 @@ html {
   align-items: center;
 }
 
+.menu-header-bar h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 40px;
+  color: #f5e6d3;
+}
+
+.menu-section {
+  padding: 20px 60px;
+}
+
 .menu-section h1 {
   text-align: center;
   margin: 30px 0 20px;
@@ -297,6 +308,13 @@ html {
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f4b400;
+  margin: 5px 0 10px;
 }
 
 .menu-card select,
@@ -360,6 +378,8 @@ html {
 }
 
 .cart-content {
+  display: flex;
+  flex-direction: column;
   background: white;
   width: 90%;
   max-width: 500px;
@@ -367,6 +387,20 @@ html {
   padding: 20px;
   border-radius: 15px;
   position: relative;
+
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#cart-items {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.cart-footer {
+  border-top: 2px solid #000;
+  padding-top: 15px;
+  text-align: right;
 }
 
 .close-btn {
@@ -391,4 +425,59 @@ html {
   color: white;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+
+.cart-item strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cart-item button {
+  margin-top: 10px;
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cart-item button:hover {
+  background: #c82333;
+}
+
+.cart-total {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #000;
+  text-align: right;
+}
+
+.cart-total h3 {
+  font-size: 20px;
+}
+
+.cart-content {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cart-item:hover {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding-left: 10px;
+  transition: 0.2s;
 }
