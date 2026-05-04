@@ -1,3 +1,4 @@
+/* Cart functionality */
 let cart = [];
 
 document.querySelectorAll(".menu-card").forEach((card) => {
@@ -147,6 +148,7 @@ function getPrice(name) {
   return prices[name] || 0;
 }
 
+/* Checkout and Thank You Modal Logic */
 const checkoutBtn = document.querySelector(".checkout-btn");
 const thankyouModal = document.getElementById("thankyou-modal");
 const closeThankyou = document.getElementById("close-thankyou");
