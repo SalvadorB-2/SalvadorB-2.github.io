@@ -144,3 +144,30 @@ function getPrice(name) {
 
   return prices[name] || 0;
 }
+
+const checkoutBtn = document.querySelector(".checkout-btn");
+const thankyouModal = document.getElementById("thankyou-modal");
+const closeThankyou = document.getElementById("close-thankyou");
+
+checkoutBtn.addEventListener("click", () => {
+  cartModal.style.display = "none";
+
+  thankyouModal.style.display = "block";
+
+  cart = [];
+  updateCartCount();
+  renderCart();
+});
+
+closeThankyou.addEventListener("click", () => {
+  thankyouModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === thankyouModal) {
+    thankyouModal.style.display = "none";
+  }
+  if (e.target === cartModal) {
+    cartModal.style.display = "none";
+  }
+});

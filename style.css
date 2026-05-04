@@ -481,3 +481,36 @@ html {
   padding-left: 10px;
   transition: 0.2s;
 }
+
+/* Thank you modal styles */
+.thankyou-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+}
+
+.thankyou-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.thankyou-content h2 {
+  margin-bottom: 10px;
+}
+
+.thankyou-content button {
+  margin-top: 15px;
+  background: #f4b400;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
