@@ -24,7 +24,7 @@ html {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -140,16 +140,9 @@ html {
 /* Locations page styles */
 .locations-hero {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   background: url("/imgs/Locations_img.jpg") center/cover no-repeat;
   color: white;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
 }
 
 .locations-hero-content {
@@ -346,6 +339,10 @@ html {
   width: 100%;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #ffcc33;
 }
 
 .cart-icon {

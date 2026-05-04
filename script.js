@@ -84,6 +84,8 @@ function renderCart() {
 
   if (cart.length === 0) {
     cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+
+    document.getElementById("cart-total").textContent = "Total: $0.00";
     return;
   }
 
@@ -156,6 +158,7 @@ checkoutBtn.addEventListener("click", () => {
 
   cart = [];
   updateCartCount();
+  document.getElementById("cart-total").textContent = "Total: $0.00";
   renderCart();
 });
 
